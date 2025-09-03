@@ -2,56 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cheese Video</title>
+  <title>Top 10,000 Cheese</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       background: #000;
       color: white;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      font-family: sans-serif;
     }
-
+    .video-section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
     video {
-      flex-grow: 1;
-      width: 100vw;
+      width: 100%;
       height: 100%;
       object-fit: contain;
+      background: #000;
     }
-
-    footer {
+    .below-content {
       background: #111;
-      padding: 10px;
+      padding: 30px 20px;
       text-align: center;
-      font-family: sans-serif;
-      font-size: 14px;
     }
-
+    footer {
+      margin-bottom: 30px;
+    }
     footer a {
       color: #aaa;
       text-decoration: none;
     }
-
-    footer a:hover {
-      text-decoration: underline;
+    .chat-container {
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
 <body>
-
-  <video controls autoplay>
-    <source src="https://ia800201.us.archive.org/26/items/top-10000-cheese_202403/top%2010000%20cheese.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <footer>
-    Visitor count:<br>
-    <!-- hitwebcounter Code START -->
-    <a href="https://www.hitwebcounter.com/" target="_blank">
-      <img src="https://hitwebcounter.com/counter/counter.php?page=21436787&style=0025&nbdigits=9&type=page&initCount=0" title="Conversions and Hits" alt="Conversions and Hits" border="0" />
-    </a>
-  </footer>
-
+  <div class="video-section">
+    <video controls autoplay>
+      <source src="https://ia800201.us.archive.org/26/items/top-10000-cheese_202403/top%2010000%20cheese.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="below-content">
+    <footer>
+      Visitor count:<br>
+      <a href="https://www.hitwebcounter.com/" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=21436787&style=0025&nbdigits=9&type=page&initCount=0" title="Visitor Counter" alt="Visitor Counter" border="0" />
+      </a>
+    </footer>
+    <div class="chat-container">
+      <script id="cid0020000417880994802" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 777px;height: 381px;">{"handle":"10kcheesechat","arch":"js","styles":{"a":"ffcc33","b":100,"c":"000000","d":"000000","k":"ffcc33","l":"ffcc33","m":"ffcc33","p":"10","q":"ffcc33","r":100,"cnrs":"1","fwtickm":1}}</script>
+    </div>
+  </div>
 </body>
 </html>
