@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <video controls preload="none" poster="https://archive.org/download/top-10000-cheese_202403/cheese-thumbnail.jpg">
+    <source src="https://ia800201.us.archive.org/26/items/top-10000-cheese_202403/top%2010000%20cheese.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>
